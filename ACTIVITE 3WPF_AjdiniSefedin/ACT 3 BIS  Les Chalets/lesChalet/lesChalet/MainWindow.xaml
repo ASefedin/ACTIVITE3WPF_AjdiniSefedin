@@ -1,0 +1,62 @@
+﻿<Window x:Class="lesChalet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lesChalet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="Brown">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <GroupBox FontSize="17" Header="TYPE DE LOGEMENT" Grid.RowSpan="2" Grid.ColumnSpan="2" Margin="30" >
+            <StackPanel HorizontalAlignment="Center">
+                <CheckBox Padding="5" FontSize="20" >CHALET</CheckBox>
+                <CheckBox FontSize="20">TENTE</CheckBox>
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox FontSize="20" Header="CARACTERISTIQUE DU SEJOUR" Grid.Column="2" Grid.RowSpan="3" Grid.ColumnSpan="6" Margin="30" >
+            <StackPanel HorizontalAlignment="Left">
+                <TextBlock >Nombre de personne (entre 1 et 6): <TextBox Width="130"></TextBox></TextBlock>
+                <TextBlock >date d'arrivé :                    <TextBox Width="130"></TextBox></TextBlock>
+                <TextBlock >date de sortie :                   <TextBox Width="130"></TextBox></TextBlock>
+                <StackPanel Orientation="Horizontal">
+                    <Button HorizontalAlignment="Left" Margin="15">DUREE DE SORTIE</Button>
+                    <TextBlock >durée en semaines</TextBlock>
+                </StackPanel>
+            </StackPanel>
+        </GroupBox>
+
+        <CheckBox Padding="5" FontSize="20" Grid.Row="2" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="20">RESERVATION</CheckBox>
+
+        <GroupBox FontSize="20" Header="RESULTATS   " Grid.ColumnSpan="4" Grid.Row="3" Grid.RowSpan="2" Margin="30" >
+            <StackPanel HorizontalAlignment="Left" Margin="8">
+                <TextBlock>Prix a payer :</TextBlock>
+                <TextBlock>Nombre de semaines :</TextBlock>
+            </StackPanel>
+        </GroupBox>
+
+        <StackPanel Grid.Row="3" Grid.Column="4" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Center" Margin="15" Width="100" Height="30">CALCULER</Button>
+        </StackPanel>
+        
+        <StackPanel Grid.Row="4" Grid.Column="4" Grid.ColumnSpan="2">
+            <Button HorizontalAlignment="Center" Margin="15" Width="100" Height="30">INIT</Button>
+        </StackPanel>
+    </Grid>
+</Window>
