@@ -1,9 +1,0 @@
-﻿<Application x:Class="ACTIVITE_3WPF_AjdiniSefedin.App"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:local="clr-namespace:ACTIVITE_3WPF_AjdiniSefedin"
-             StartupUri="MainWindow.xaml">
-    <Application.Resources>
-         
-    </Application.Resources>
-</Application>
